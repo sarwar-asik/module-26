@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Insde</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-3xl font-bold text-center text-blue-400 mb-5">Let's get some <span
+                class="text-4xl text-blue-600">Moooooney</span></h1>
+    </header>
+    <main>
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <!-- diposit -->
+                <div class="bg-green-600 p-8 rounded-lg">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class=" text-5xl">$<span  id="deposit-total">00</span></h2>
+                </div>
+                <!-- WithDraw -->
+                <div class="bg-yellow-500 p-8 rounded-lg">
+                    <h4 class="text-2xl">WithDraw</h4>
+                    <h2 class=" text-5xl">$<span id="withdwar-total">00</span></h2>
+                </div>
+                <!-- Balance -->
+                <div class="bg-violet-500 p-8 rounded-lg">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class=" text-5xl">$<span id="balance-total">1200</span></h2>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section-2 -->
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <!-- diposit -->
+                <div class="bg-violet-500 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-4">Please Diposite</h4>
+                    <!--input= please Diposit -->
+                <input id="diposit-field" class="w-9/12 px-2 block rounded-md text-black" type="text" name="" id=""
+                placeholder="Amount You want to diposite">
+<!-- button-1 -->
+            <button id="btn-deposit"
+                class="bg-amber-600 px-8 py-2 text-white font-bold mt-2 rounded-lg hover:bg-green-600">Submit</button>
+                </div>
+                <!-- WithDraw -->
+                <div class="bg-sky-400 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-4">Please WithDraw</h4>
+                     <!--input: please Withdraw -->
+                <input id="WithDraw-field" class="w-9/12 px-2 block rounded-md text-red-500 " type="text" name="" id=""
+                placeholder="Amount You want to WithDraw">
+<!-- button-2 -->
+            <button id="btn-withdraw"
+                class="bg-red-500 px-8 py-2 text-white font-bold mt-2 rounded-lg hover:bg-yellow-600">Submit</button>
+                    
+                </div>
+              
+
+            </div>
+        </section>
+    </main>
+    <!-- for Deposit.js link -->
+    <script src="js/diposit.js"></script>
+    <!-- for withdraw.js link -->
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
