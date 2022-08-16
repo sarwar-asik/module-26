@@ -10,7 +10,7 @@ const password = passwordField.value;
 //step-4 ... dont do it !!///
 const lastcharac = email.slice(10)
 
-if(lastcharac === '@gmail.com' || typeof password === 'secret'){
+if(lastcharac === '@gmail.com' || typeof password === 'number'){
    window.location.href = 'bank.html'
 }
 else{
