@@ -8,10 +8,13 @@ const email =emailField.value;
 const passwordField = document.getElementById('user-password');
 const password = passwordField.value;
 //step-4 ... dont do it !!///
-if(email==='asik@gmail.com' && password === 'secret'){
-    console.log('Valid User')
+const lastcharac = email.slice(10)
+
+if(lastcharac === '@gmail.com' || password === 'secret'){
+   window.location.href = 'bank.html'
 }
 else{
-    alert('Invalid user')
+    alert('Invalid user. Please write correct Email and Password')
 }
+passwordField.value = ''
 })
